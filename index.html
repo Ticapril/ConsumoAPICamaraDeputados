@@ -1,42 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Javascript</title>
-    <style>
-        *{
-            padding: 0;
-            margin: 0;
-            box-sizing: border-box;
-        }
-        .center {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .box{
-            height: 200px;
-            background-color: #000;
-            color: #fff;
-            border: 10px solid rgb(4, 0, 255);
-        }
-        .mg {
-            margin: 10px;
-        }
-    </style>
+    <title>Consumo de API dadosAbertos Câmara dos Deputados</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <div id="app">
-        <h1 class="center box">Deputados Registrados no Sistema</h1>
-        <h2 class="mg">Lista de Partidos Políticos brasileiros</h2>
-    </div>
-    <div class="mg">
-        <button type="submit" id="btn-listagem-deputados">Listar deputados</button>
-        <ul id="lista-deputados">
-
-        </ul>
+    <div class="container"> 
+        <div id="app">
+            <h1 class="center box mb">Deputados Registrados no Sistema</h1>
+            <h2 class="ml mb">Lista de Partidos Políticos brasileiros</h2>
+            <div class="ml">
+                    <button type="submit" id="btn-listagem-deputados" class="mb">Listar deputados</button>
+                    <ul id="lista-deputados"></ul>
+            </div>
+        </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="./app.js"></script>
